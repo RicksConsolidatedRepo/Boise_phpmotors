@@ -1,0 +1,57 @@
+.description {
+  display: inline-block;
+  color: #4c96d7;
+  padding-bottom: 50px;
+}
+
+.description .img-vehicle {
+  width: 100%;
+}
+
+.details  {
+  display: flex;
+  flex-direction: column;
+}
+
+.extras {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.upgrades-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.upgrades-btns .upgrade-btn {
+  display: flex;
+  height: 100px;
+  background-color: #4c96d7;
+  flex: 0 45%;
+  margin: 5px;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.upgrade-btn a {
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .description {
+    position: relative;
+  }
+
+  .details {
+    flex-direction: row-reverse;
+  }
+
+  .extras {
+    display: flex;
+    flex-direction: row;
+  }
+}
